@@ -7,7 +7,7 @@ import { FaReact } from "react-icons/fa";
 
 export default function Banner() {
   return (
-    <div className="w-full max-w-7xl mx-auto mt-16 flex lg:gap-24 flex-col-reverse lg:flex-row">
+    <section className="w-full max-w-7xl mx-auto mt-16 flex lg:gap-24 flex-col-reverse lg:flex-row">
       <div className="w-full md:w-[700px] flex  gap-4 text-color-navbar-item flex-col mt-10 md:mt-16">
         <p className="uppercase text-lg: md:text-xl tracking-widest text-color-text">
           Welcome
@@ -63,6 +63,6 @@ export default function Banner() {
           className="absolute bottom-0"
         />
       </div>
-    </div>
+    </section>
   );
 }
