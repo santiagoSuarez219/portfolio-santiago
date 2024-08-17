@@ -16,10 +16,10 @@ export default function Experience() {
                   &bull;
                 </span>
 
-                <h3 className="text-2xl md:text-4xl font-bold text-primary mb-4">
+                <h3 className="text-2xl md:text-3xl font-bold text-primary mb-4">
                   Web Developer
                 </h3>
-                <h4 className="font-semibold text-lg md:text-2xl text-gray-600 dark:text-white">
+                <h4 className="font-semibold text-lg md:text-xl text-gray-600 dark:text-white">
                   Colegio Mayor de Antioquia
                 </h4>
                 <time className="p-0 m-0 text-white/80">
@@ -27,7 +27,7 @@ export default function Experience() {
                 </time>
               </div>
             </div>
-            <div className="relative flex flex-col gap-2 pb-4 text-gray-300 lg:text-xl ">
+            <div className="relative flex flex-col gap-2 pb-4 text-gray-300 lg:text-lg ">
               <p>
                 I developed a web application to manage and visualize
                 information related to a research project on the study of
@@ -49,10 +49,10 @@ export default function Experience() {
                   &bull;
                 </span>
 
-                <h3 className="text-2xl md:text-4xl font-bold text-primary">
+                <h3 className="text-2xl md:text-3xl font-bold text-primary">
                   Web Developer
                 </h3>
-                <h4 className="font-semibold text-lg md:text-2xl text-gray-600 dark:text-white">
+                <h4 className="font-semibold text-lg md:text-xl text-gray-600 dark:text-white">
                   Instituto Tecnólogico Metropolitano
                 </h4>
                 <time className="p-0 m-0 text-white/80">
@@ -60,7 +60,7 @@ export default function Experience() {
                 </time>
               </div>
             </div>
-            <div className="relative flex flex-col gap-2 pb-4 text-gray-300 lg:text-xl ">
+            <div className="relative flex flex-col gap-2 pb-4 text-gray-300 lg:text-lg ">
               <p>
                 Develop a web and IoT application to monitor and manage a
                 hydroponic growing system. This application allows you to

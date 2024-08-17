@@ -1,4 +1,13 @@
-import { Navbar, Banner, Experience } from "@/components";
+import {
+  Navbar,
+  Banner,
+  Experience,
+  Projects,
+  Training,
+  Skills,
+  AboutMe,
+  ContactMe,
+} from "@/components";
 
 export default function Home() {
   return (
@@ -6,6 +15,11 @@ export default function Home() {
       <Navbar />
       <Banner />
       <Experience />
+      <Projects />
+      <Training />
+      <Skills />
+      <AboutMe />
+      <ContactMe />
     </main>
   );
 }
