@@ -1,6 +1,9 @@
 export default function Training() {
   return (
-    <section className="w-full max-w-7xl mx-auto mt-12 md:mt-44  flex flex-col justify-center items-center">
+    <section
+      id="training"
+      className="w-full max-w-7xl mx-auto mt-12 md:mt-44  flex flex-col justify-center items-center"
+    >
       <p className="text-primary md:text-lg uppercase tracking-widest">
         My training
       </p>

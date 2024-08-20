@@ -5,7 +5,10 @@ import { HiLink } from "react-icons/hi2";
 
 export default function Projects() {
   return (
-    <section className="w-full max-w-7xl mx-auto mt-12 md:mt-44  flex flex-col justify-center items-center">
+    <section
+      id="projects"
+      className="w-full max-w-7xl mx-auto mt-12 md:mt-44  flex flex-col justify-center items-center"
+    >
       <p className="text-primary md:text-lg uppercase tracking-widest">
         My main projects
       </p>
@@ -34,7 +37,7 @@ export default function Projects() {
         </div>
         <div className="w-full p-6 rounded-xl shadow-item-banner">
           <Image
-            src="/img/ecuot2.jpeg"
+            src="/img/ecuot.jpeg"
             alt="ecuot-project"
             width={500}
             height={500}

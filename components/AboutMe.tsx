@@ -8,7 +8,10 @@ const greyQo = Grey_Qo({
 
 export default function AboutMe() {
   return (
-    <section className="w-full max-w-7xl mx-auto mt-12 md:mt-44  flex flex-col justify-center items-center">
+    <section
+      id="about"
+      className="w-full max-w-7xl mx-auto mt-12 md:mt-44  flex flex-col justify-center items-center"
+    >
       <p className="text-primary md:text-lg uppercase tracking-widest">
         a little about me
       </p>
@@ -39,7 +42,7 @@ export default function AboutMe() {
         </div>
         <div className="w-full">
           <Image
-            src="/img/aboutme5.png"
+            src="/img/aboutme6.png"
             alt="about-me"
             width={1000}
             height={1000}
