@@ -15,22 +15,25 @@ export default function Navbar() {
       </div>
 
       <div className="hidden lg:flex items-center gap-12 ">
-        <ul className="flex text-color-navbar-item text-sm gap-12 [&>li]:cursor-pointer">
-          <Link href="#experience">
-            <li className="hover:text-primary transition-all">Experience</li>
-          </Link>
-          <Link href="#projects">
-            <li className="hover:text-primary transition-all">Projects</li>
-          </Link>
-          <Link href="#training">
-            <li className="hover:text-primary transition-all">Training</li>
-          </Link>
-          <Link href="#skills">
-            <li className="hover:text-primary transition-all">Skills</li>
-          </Link>
-          <Link href="#about">
-            <li className="hover:text-primary transition-all">About me</li>
-          </Link>
+        <ul className="flex text-color-navbar-item text-sm gap-12 [&>li]:cursor-pointer z-10">
+          <li className="hover:text-primary transition-all">
+            <Link href="#experience">Experience</Link>
+          </li>
+          <li className="hover:text-primary transition-all cursor-pointer">
+            <Link href="#projects">Projects</Link>
+          </li>
+
+          <li className="hover:text-primary transition-all">
+            <Link href="#training">Training</Link>
+          </li>
+
+          <li className="hover:text-primary transition-all">
+            <Link href="#skills">Skills</Link>
+          </li>
+
+          <li className="hover:text-primary transition-all">
+            <Link href="#about">About me</Link>
+          </li>
         </ul>
         <Link href="#contact" className=" text-primary px-3 ">
           Contact me
