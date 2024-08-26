@@ -1,16 +1,27 @@
+"use client";
+import useStore from "@/store/store";
 import Image from "next/image";
 import Link from "next/link";
 
 import { HiBars3BottomRight } from "react-icons/hi2";
 
 export default function Navbar() {
+  const openMenu = useStore((state) => state.openMenu);
   return (
-    <nav id="nav-bar" className="flex justify-between uppercase items-center">
+    <nav
+      id="nav-bar"
+      className="flex justify-between uppercase items-center z-10"
+    >
       <h1 className=" text-2xl font-bold text-primary flex items-center gap-2">
         <Image src="/img/logo.png" alt="logo" width={50} height={50} />
         Santiago S.
       </h1>
-      <div className="lg:hidden text-4xl text-primary">
+      <div
+        className="lg:hidden text-4xl text-primary"
+        onClick={() => {
+          openMenu();
+        }}
+      >
         <HiBars3BottomRight />
       </div>
 

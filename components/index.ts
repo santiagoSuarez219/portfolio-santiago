@@ -1,3 +1,4 @@
+export { default as BurguerMenu } from "./BurguerMenu";
 export { default as Experience } from "./Experience";
 export { default as ContactMe } from "./ContactMe";
 export { default as Projects } from "./Projects";

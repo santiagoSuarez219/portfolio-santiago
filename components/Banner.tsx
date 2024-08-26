@@ -86,7 +86,7 @@ export default function Banner() {
           </div>
         </div>
       </div>
-      <div className="mt-24 lg:mt-0 w-full lg:w-[508px] h-[260px] small:h-[310px] md:h-[470px] self-end relative shadow-item-banner rounded-lg">
+      <div className="mt-24 lg:mt-0 w-full lg:w-[508px] h-[260px] small:h-[350px] md:h-[470px] self-end relative shadow-item-banner rounded-lg -z-10">
         <Image
           src="/img/me.png"
           alt="me"
