@@ -16,7 +16,7 @@ export default function BurguerMenu() {
         <div className="fixed top-0 left-0 w-screen h-screen bg-black opacity-80 z-10"></div>
       )}
       <nav
-        className={`fixed top-0 left-0 h-screen p-2 z-20 bg-background-color-dark w-3/4 flex flex-col transform transition-all duration-300 ${
+        className={`fixed top-0 left-0 h-screen p-2 z-20 bg-background-color-dark w-3/4 max-w-[375px] flex flex-col transform transition-all duration-700 ${
           !isMenuOpen ? "-translate-x-full" : ""
         }`}
       >
@@ -36,23 +36,33 @@ export default function BurguerMenu() {
           Web Developer.
         </p>
         <ul className="mt-8 uppercase text-base  text-color-navbar-item flex flex-col gap-8 tracking-wider">
-          <li className="">
-            <Link href="#experience">Experience</Link>
+          <li>
+            <Link href="#experience" onClick={() => closeMenu()}>
+              Experience
+            </Link>
           </li>
-          <li className="">
-            <Link href="#projects">Projects</Link>
-          </li>
-
-          <li className="">
-            <Link href="#training">Training</Link>
-          </li>
-
-          <li className="">
-            <Link href="#skills">Skills</Link>
+          <li>
+            <Link href="#projects" onClick={() => closeMenu()}>
+              Projects
+            </Link>
           </li>
 
-          <li className="">
-            <Link href="#about">About me</Link>
+          <li>
+            <Link href="#training" onClick={() => closeMenu()}>
+              Training
+            </Link>
+          </li>
+
+          <li>
+            <Link href="#skills" onClick={() => closeMenu()}>
+              Skills
+            </Link>
+          </li>
+
+          <li>
+            <Link href="#about" onClick={() => closeMenu()}>
+              About me
+            </Link>
           </li>
         </ul>
         <div className="absolute bottom-14 pt-7 left-2 w-[calc(100%-16px)] border-t border-color-text">
