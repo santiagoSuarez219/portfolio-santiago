@@ -32,7 +32,7 @@ export default function Navbar() {
         Santiago S.
       </h1>
       <button
-        className="flex items-center text-primary gap-2 font-bold uppercase"
+        className="flex lg:hidden items-center text-primary gap-2 font-bold uppercase"
         onClick={changeLanguage}
       >
         <IoLanguage className="size-5" />
