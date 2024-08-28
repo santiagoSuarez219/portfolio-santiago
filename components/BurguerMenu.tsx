@@ -6,10 +6,12 @@ import { HiXMark } from "react-icons/hi2";
 import { LuLinkedin, LuGithub } from "react-icons/lu";
 
 import useStore from "../store/store";
+import { data } from "../data/data";
 
 export default function BurguerMenu() {
   const isMenuOpen = useStore((state) => state.isMenuOpen);
   const closeMenu = useStore((state) => state.closeMenu);
+  const language = useStore((state) => state.language);
   return (
     <div>
       {isMenuOpen && (
@@ -32,42 +34,36 @@ export default function BurguerMenu() {
           </div>
         </div>
         <p className="text-color-text text-lg mt-7 font-light pb-7 border-b border-color-text">
-          {"Hi, I'm"} <span className="text-primary">Santiago Suarez</span>, a
-          Web Developer.
+          {language === "en" ? "Hi, I'm" : "Hola, soy"}{" "}
+          <span className="text-primary">Santiago Suarez</span>,{" "}
+          {language === "en" ? "a Web Developer" : "Desarrollador Web"}
         </p>
         <ul className="mt-8 uppercase text-base  text-color-navbar-item flex flex-col gap-8 tracking-wider">
-          <li>
-            <Link href="#experience" onClick={() => closeMenu()}>
-              Experience
-            </Link>
-          </li>
-          <li>
-            <Link href="#projects" onClick={() => closeMenu()}>
-              Projects
-            </Link>
-          </li>
-
-          <li>
-            <Link href="#training" onClick={() => closeMenu()}>
-              Training
-            </Link>
-          </li>
-
-          <li>
-            <Link href="#skills" onClick={() => closeMenu()}>
-              Skills
-            </Link>
-          </li>
-
-          <li>
-            <Link href="#about" onClick={() => closeMenu()}>
-              About me
-            </Link>
-          </li>
+          {language === "en"
+            ? data.english.navbarItems.map((item, index) => (
+                <li key={index}>
+                  <Link
+                    href={`#${data.navbarRoutes[index]}`}
+                    onClick={() => closeMenu()}
+                  >
+                    {item}
+                  </Link>
+                </li>
+              ))
+            : data.spanish.navbarItems.map((item, index) => (
+                <li key={index}>
+                  <Link
+                    href={`#${data.navbarRoutes[index]}`}
+                    onClick={() => closeMenu()}
+                  >
+                    {item}
+                  </Link>
+                </li>
+              ))}
         </ul>
         <div className="absolute bottom-14 pt-7 left-2 w-[calc(100%-16px)] border-t border-color-text">
           <h3 className="uppercase text-color-text mb-6 font-bold tracking-wider">
-            Find with me
+            {language === "en" ? "Find with me" : "Encuentrame en"}
           </h3>
           <div className="flex gap-4 [&>div]:text-color-navbar-item [&>div]:p-6 [&>div]:text-xl [&>div]:rounded-lg [&>div]:shadow-item-banner">
             <div>
